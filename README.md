@@ -1,1 +1,1 @@
-# extra-credits-20
+# Extra Credits Game Jam 2020
