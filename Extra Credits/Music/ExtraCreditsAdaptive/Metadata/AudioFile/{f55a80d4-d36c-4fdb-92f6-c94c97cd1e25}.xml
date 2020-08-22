@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{f55a80d4-d36c-4fdb-92f6-c94c97cd1e25}">
+		<property name="assetPath">
+			<value>AdaptiveTest-Flute.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.363645833333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{98cf41a6-e9dc-4de3-8936-b07f840f4c4e}</destination>
+		</relationship>
+	</object>
+</objects>
