@@ -17,6 +17,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-8990146283966446334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonsterParam
+  m_EditorClassIdentifier: 
+  Name: MonsterParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &-8898957691148621746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,6 +52,145 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8851147053763616951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-8728062864185545094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-7845684767591493873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337057329950737
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-7224801898168527568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-6769360357531208485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-6192122673896074966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Monster
+  m_EditorClassIdentifier: 
+  Name: Monster
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-6033358675023385053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337059386059827
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5975141357952519193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337074045858318
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-5572914789102777038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50,6 +206,42 @@ MonoBehaviour:
   Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637337070700000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5305937913320343765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637336975361147532
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5245277483485997179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337074989154461
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -69,7 +261,24 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &-4999985224504285305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &-4954897104429021443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,11 +293,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637336930459658501
+  lastModified: 637337074989264169
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 798
+    Value: 848
   Exists: 1
 --- !u!114 &-4171697773719126297
 MonoBehaviour:
@@ -124,7 +333,129 @@ MonoBehaviour:
   lastModified: 637336930459548806
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &-2922435474352332272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-2141905346170304128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337055024509415
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1430134152538311454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337051994312585
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1404170458631958470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-1086910236919548871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonsterParam
+  m_EditorClassIdentifier: 
+  Name: MonsterParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-473919655388101364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337056268252484
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-408801891590517229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonsterParam
+  m_EditorClassIdentifier: 
+  Name: MonsterParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,16 +470,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -4954897104429021443}
-  - {fileID: -3287076389239128368}
+  - {fileID: -5245277483485997179}
   EditorEvents:
   - {fileID: 7633230870673606695}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -3287076389239128368}
+  - {fileID: -5245277483485997179}
   StringsBanks:
   - {fileID: -4954897104429021443}
-  stringsBankWriteTime: 637336930459658501
+  stringsBankWriteTime: 637337074989264169
   cacheVersion: 3
+--- !u!114 &168948410988518545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonsterParam
+  m_EditorClassIdentifier: 
+  Name: MonsterParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &381721693738983185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +515,129 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &1875084158073106928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337060150129935
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2071424451557432835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &2153370695814957255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Exit Distance
+  m_EditorClassIdentifier: 
+  Name: Exit Distance
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &2446279080793964808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337071642141729
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3879910717518706702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337069772161692
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4309391382238994250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337065476890800
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4569464420803876241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
 --- !u!114 &5506326129268672905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +651,57 @@ MonoBehaviour:
   m_Name: parameter:/VerticalOrchestration/Intensity
   m_EditorClassIdentifier: 
   Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &5543436051783253625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &6158545315642243886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &6282648426410933605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Monster Distance
+  m_EditorClassIdentifier: 
+  Name: Monster Distance
   Min: 0
   Max: 4
   Default: 0
@@ -217,15 +739,33 @@ MonoBehaviour:
   Path: event:/VerticalOrchestration
   guid: be3ef731e43c1f4aa408c1931b831871
   Banks:
-  - {fileID: -3287076389239128368}
+  - {fileID: -5245277483485997179}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -5191875819020618423}
+  - {fileID: 2071424451557432835}
+  - {fileID: 7835267294223730641}
   MinDistance: 0
   MaxDistance: 0
   Length: 4363
+--- !u!114 &7835267294223730641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
 --- !u!114 &8242285550852296058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,3 +783,37 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 1
+--- !u!114 &8431268746620991430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &8492840256404896483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonsterParam
+  m_EditorClassIdentifier: 
+  Name: MonsterParam
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0

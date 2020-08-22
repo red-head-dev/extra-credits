@@ -637,6 +637,14 @@ MonoBehaviour:
   Params:
   - Name: Intensity
     Value: 0
+  - Name: MonsterParam
+    Value: 0
+  - Name: Monster
+    Value: 0
+  - Name: MonParam
+    Value: 0
+  - Name: ExitParam
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
@@ -647,7 +655,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
@@ -659,6 +667,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1185538098241044979}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &702487906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702487898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744a208c85da6d04c861d81b992e4ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Emitters:
+  - Target: {fileID: 519420033}
+    Params: []
+  TriggerEvent: 0
 --- !u!1 &1231904782
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +719,9 @@ MonoBehaviour:
   loseText: {fileID: 362203868}
   endGameBackground: {fileID: 1559887082}
   endGameDelay: 5
+  fmodEvent: event:/VerticalOrchestration
+  MonParam: 0
+  exitParam: 0
 --- !u!4 &1231904784
 Transform:
   m_ObjectHideFlags: 0
