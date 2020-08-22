@@ -15,10 +15,10 @@ public class PlayerControler: MonoBehaviour
 	public float rotV = 180.0f; // degress /sec
 	public float rotA = 1.0f; // degress /sec^2
 
-	private Rigidbody2D m_Rigidbody2D;
+	private Rigidbody2D rb;
 	// Start is called before the first frame update
 	void Start() {
-		m_Rigidbody2D = GetComponent < Rigidbody2D > ();
+		rb = GetComponent < Rigidbody2D > ();
 	}
 
 	private Vector2 a;
@@ -40,7 +40,7 @@ public class PlayerControler: MonoBehaviour
 
 		{ // set velocity
 			// need local
-			Vector3 v = transform.InverseTransformVector(m_Rigidbody2D.velocity);
+			Vector3 v = transform.InverseTransformVector(rb.velocity);
 			//Debug.Log("local v= " + v );
 			//
 			//
@@ -84,11 +84,11 @@ public class PlayerControler: MonoBehaviour
 
 		{
 			// Unity usess fucking degress in one part and radians in the other fuck you
-			float curRotV = m_Rigidbody2D.angularVelocity;
+			float curRotV = rb.angularVelocity;
 			float desiredRotV = Input.GetAxis("Horizontal") * -rotV;
 			//float desiredRotV = 1 * -rotV;
 
-			float torque = rotA * PI / 180 * m_Rigidbody2D.inertia;
+			float torque = rotA * PI / 180 * rb.inertia;
 			if ( curRotV < desiredRotV ) { // Want to turn faster
 				omega = Min(torque * Time.fixedDeltaTime, desiredRotV - curRotV);
 			} else if ( curRotV > desiredRotV) { // Want to turn slower
@@ -101,11 +101,11 @@ public class PlayerControler: MonoBehaviour
 
 		// 2D lacks acceleration this accelration is forces as long as mass = 1 KG
 		// SOLUTION muliple force by mass
-		//m_Rigidbody2D.AddRelativeForce(new Vector2(1f, 1f) * a, ForceMode2D.Force);
-		//m_Rigidbody2D.AddTorque(omega, ForceMode2D.Force);
+		//rb.AddRelativeForce(new Vector2(1f, 1f) * a, ForceMode2D.Force);
+		//rb.AddTorque(omega, ForceMode2D.Force);
 
-		m_Rigidbody2D.AddRelativeForce( a, ForceMode2D.Impulse);
-		m_Rigidbody2D.AddTorque(omega, ForceMode2D.Impulse);
+		rb.AddRelativeForce( a, ForceMode2D.Impulse);
+		rb.AddTorque(omega, ForceMode2D.Impulse);
 
 	}
 
