@@ -43,10 +43,10 @@ public class PlayerControler: MonoBehaviour
 			// need local
 			Vector3 v = transform.InverseTransformVector(m_Rigidbody2D.velocity);
 			//Debug.Log("local v= " + v );
-      //
-      //
-      // IT would make sense to do the same type of using min and max as with
-      // torque but I'm not going to bother now
+			//
+			//
+			// IT would make sense to do the same type of using min and max as with
+			// torque but I'm not going to bother now
 
 			if ( vAxis > 0 ) { // forward
 				if ( v.y < forwardV ) {
@@ -117,5 +117,9 @@ public class PlayerControler: MonoBehaviour
 			Debug.Log("Entered Exit");
 			sceneControler.GetComponent < SceneControler > ().OnWin();
 		}
+			if (collision.collider.gameObject.tag == "Monster" ) {
+		                Debug.Log("Hit Monstert");
+		                sceneControler.GetComponent < SceneControler > ().OnLose();
+		        }
 	}
 }
