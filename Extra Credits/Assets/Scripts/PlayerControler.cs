@@ -6,7 +6,6 @@ using static UnityEngine.Mathf;
 public class PlayerControler: MonoBehaviour
 {
 
-	public GameObject exit;
 	public GameObject sceneControler;
 	public float forwardV = 1.0f;
 	public float backwardV = 0.5f;
@@ -113,13 +112,13 @@ public class PlayerControler: MonoBehaviour
 	// On collision only works with a non trigger collider
 	// trigger must be done in trigger.
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.collider.gameObject == exit ) {
+		if (collision.collider.gameObject.tag == "Finish" ) {
 			Debug.Log("Entered Exit");
 			sceneControler.GetComponent < SceneControler > ().OnWin();
 		}
-			if (collision.collider.gameObject.tag == "Monster" ) {
-		                Debug.Log("Hit Monstert");
-		                sceneControler.GetComponent < SceneControler > ().OnLose();
-		        }
+		if (collision.collider.gameObject.tag == "Monster" ) {
+			Debug.Log("Hit Monstert");
+			sceneControler.GetComponent < SceneControler > ().OnLose();
+		}
 	}
 }
