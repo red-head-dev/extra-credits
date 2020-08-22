@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: Music/ExtraCreditsAdaptive/ExtraCreditsAdaptive.fspro
-  sourceBankPath: Music\ExtraCreditsAdaptive\Build
+  sourceBankPath: Music/ExtraCreditsAdaptive/Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
