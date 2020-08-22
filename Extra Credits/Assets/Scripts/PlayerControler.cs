@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Mathf;
 
 public class PlayerControler: MonoBehaviour
 {
@@ -26,6 +27,13 @@ public class PlayerControler: MonoBehaviour
 
 	void Update() {
 
+
+
+	}
+
+	// Update is called once per frame
+	void FixedUpdate() {
+
 		// Use Input's sensistive so that movement is not instattanious
 		// default to 0 to 100 in 1/3rd of a second.
 		// RAW is just 1s or zeros not sure if good idea
@@ -34,78 +42,79 @@ public class PlayerControler: MonoBehaviour
 		{ // set velocity
 			// need local
 			Vector3 v = transform.InverseTransformVector(m_Rigidbody2D.velocity);
-			Debug.Log("local v= " + v );
+			//Debug.Log("local v= " + v );
+      //
+      //
+      // IT would make sense to do the same type of using min and max as with
+      // torque but I'm not going to bother now
 
 			if ( vAxis > 0 ) { // forward
 				if ( v.y < forwardV ) {
-					a.y = acceleration;
+					a.y = acceleration * Time.fixedDeltaTime;
 				} else if ( v.y > forwardV) {
-					a.y = -decceleration;
+					a.y = -decceleration * Time.fixedDeltaTime;
 				} else {
 					a.y = 0.0f;
 				}
 			} else if ( vAxis < 0 ) { // backwards
 				if ( v.y < -backwardV ) {
-					a.y = decceleration;
+					a.y = decceleration * Time.fixedDeltaTime;
 				} else if ( v.y > -backwardV) {
-					a.y = -decceleration; // might make -acceleration
+					a.y = -decceleration * Time.fixedDeltaTime; // might make -acceleration
 				} else {
 					a.y = 0.0f;
 				}
 			} else { // stop
 				if ( v.y < 0 ) {
-					a.y = decceleration;
+					a.y = decceleration * Time.fixedDeltaTime;
 				} else if ( v.y > 0) {
-					a.y = -decceleration;
+					a.y = -decceleration * Time.fixedDeltaTime;
 				} else {
 					a.y = 0.0f;
 				}
 			}
 			// stop lateral movement
 			if ( v.x < 0 ) {
-				Debug.Log("A");
-				a.x = xDecceleration;
+				a.x = xDecceleration * Time.fixedDeltaTime;
 			} else if ( v.x > 0) {
-				Debug.Log("B");
-				a.x = -xDecceleration;
+				a.x = -xDecceleration * Time.fixedDeltaTime;
 			} else {
 				a.x = 0.0f;
 			}
 		}
 
 		{
+			// Unity usess fucking degress in one part and radians in the other fuck you
 			float curRotV = m_Rigidbody2D.angularVelocity;
 			float desiredRotV = Input.GetAxis("Horizontal") * -rotV;
-			if ( curRotV < desiredRotV ) {
-				omega = rotA;
-			} else if ( curRotV > desiredRotV) {
-				omega = -rotA;
+			//float desiredRotV = 1 * -rotV;
+
+			float torque = rotA * PI / 180 * m_Rigidbody2D.inertia;
+			if ( curRotV < desiredRotV ) { // Want to turn faster
+				omega = Min(torque * Time.fixedDeltaTime, desiredRotV - curRotV);
+			} else if ( curRotV > desiredRotV) { // Want to turn slower
+				omega = Max(-torque * Time.fixedDeltaTime, desiredRotV - curRotV);
 			} else {
 				omega = 0.0f;
 			}
 		}
-
-
-	}
-
-	// Update is called once per frame
-	void FixedUpdate() {
-
-		// tranform.up gives green axis in world units which is then multiplied by
-		// 1 dimensional velocity to get the two dimensional velocity.
+		//Debug.Log("Omega: " + omega);
 
 		// 2D lacks acceleration this accelration is forces as long as mass = 1 KG
-		m_Rigidbody2D.AddRelativeForce(new Vector2(1f, 1f) * a, ForceMode2D.Force);
-		//m_Rigidbody2D.velocity = transform.up * velocityV;
-		m_Rigidbody2D.AddTorque(omega, ForceMode2D.Force);
+		// SOLUTION muliple force by mass
+		//m_Rigidbody2D.AddRelativeForce(new Vector2(1f, 1f) * a, ForceMode2D.Force);
+		//m_Rigidbody2D.AddTorque(omega, ForceMode2D.Force);
+
+		m_Rigidbody2D.AddRelativeForce( a, ForceMode2D.Impulse);
+		m_Rigidbody2D.AddTorque(omega, ForceMode2D.Impulse);
+
 	}
 
 	// On collision only works with a non trigger collider
 	// trigger must be done in trigger.
 	void OnCollisionEnter2D(Collision2D collision) {
-		Debug.Log("colide");
 		if (collision.collider.gameObject == exit ) {
-			Debug.Log("enter");
+			Debug.Log("Entered Exit");
 			sceneControler.GetComponent < SceneControler > ().OnWin();
 		}
 	}
