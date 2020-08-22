@@ -58,3 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Ignore Fmod Monitor which is in wrong place
+fmod_editor.log
