@@ -667,6 +667,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1185538098241044979}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &702487906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +685,14 @@ MonoBehaviour:
   - Target: {fileID: 519420033}
     Params: []
   TriggerEvent: 0
+=======
+--- !u!4 &702487904 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1185538097556135087, guid: ad3af9c8103e5496aa5ed88a541733d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1185538098241044979}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 651a76c... fix up UI
 --- !u!1 &1231904782
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +848,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 337, y: -159}
+=======
+  m_AnchoredPosition: {x: 335, y: -318}
+>>>>>>> parent of 651a76c... fix up UI
   m_SizeDelta: {x: 570.9507, y: 66.90137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381517342
@@ -1135,7 +1148,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 338.7, y: -76.7}
+=======
+  m_AnchoredPosition: {x: 333, y: -236}
+>>>>>>> parent of 651a76c... fix up UI
   m_SizeDelta: {x: 570.9507, y: 66.90137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723462888
