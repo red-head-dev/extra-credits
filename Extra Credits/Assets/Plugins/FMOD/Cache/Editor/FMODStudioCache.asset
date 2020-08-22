@@ -35,6 +35,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-5572914789102777038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337070700000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-4954897104429021443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49,11 +67,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637336930459658501
+  lastModified: 637337070700000000
   LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 798
+  FileSizes: []
   Exists: 1
 --- !u!114 &-4171697773719126297
 MonoBehaviour:
@@ -86,15 +102,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -4954897104429021443}
-  - {fileID: -8898957691148621746}
+  - {fileID: -5572914789102777038}
   EditorEvents:
   - {fileID: 7633230870673606695}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8898957691148621746}
+  - {fileID: -5572914789102777038}
   StringsBanks:
   - {fileID: -4954897104429021443}
-  stringsBankWriteTime: 637336930459658501
+  stringsBankWriteTime: 637337070700000000
   cacheVersion: 3
 --- !u!114 &381721693738983185
 MonoBehaviour:
@@ -164,12 +180,29 @@ MonoBehaviour:
   Path: event:/VerticalOrchestration
   guid: be3ef731e43c1f4aa408c1931b831871
   Banks:
-  - {fileID: -8898957691148621746}
+  - {fileID: -5572914789102777038}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4171697773719126297}
+  - {fileID: 8242285550852296058}
   MinDistance: 0
   MaxDistance: 0
   Length: 4363
+--- !u!114 &8242285550852296058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/Intensity
+  m_EditorClassIdentifier: 
+  Name: Intensity
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
