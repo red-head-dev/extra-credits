@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerControler: MonoBehaviour
 {
 
+	public GameObject exit;
+	public GameObject sceneControler;
 	public float forwardV = 1.0f;
 	public float backwardV = 0.5f;
 	public float rotV = 1.0f;
@@ -40,5 +42,15 @@ public class PlayerControler: MonoBehaviour
 		// 1 dimensional velocity to get the two dimensional velocity.
 		m_Rigidbody2D.velocity = transform.up * velocityV;
 		m_Rigidbody2D.angularVelocity = angularV;
+	}
+
+  // On collision only works with a non trigger collider
+  // trigger must be done in trigger.
+	void OnCollisionEnter2D(Collision2D collision) {
+		Debug.Log("colide");
+		if (collision.collider.gameObject == exit ) {
+			Debug.Log("enter");
+			sceneControler.GetComponent < SceneControler > ().OnWin();
+		}
 	}
 }
