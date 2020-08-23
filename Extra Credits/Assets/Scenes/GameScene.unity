@@ -21980,6 +21980,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3836056794873494333, guid: 2ed284350809c441f9f311506c644d0c,
+        type: 3}
+      propertyPath: distCoeff
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3836056795034882884, guid: 2ed284350809c441f9f311506c644d0c,
         type: 3}
       propertyPath: m_IsActive

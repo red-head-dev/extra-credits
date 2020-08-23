@@ -86,6 +86,23 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 0
+--- !u!114 &-8176860496720523230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-7845684767591493873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,6 +121,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7443266610793530832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337971515914669
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-7224801898168527568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +208,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5995322416649282217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-5975141357952519193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +258,24 @@ MonoBehaviour:
   Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637337291370000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5674286590286660691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337976575105151
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -311,11 +381,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637337271570000000
+  lastModified: 637337976575165002
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 848
+  Exists: 1
+--- !u!114 &-4693362569008483460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &-4171697773719126297
 MonoBehaviour:
@@ -334,6 +421,24 @@ MonoBehaviour:
   Max: 4
   Default: 0
   Exists: 1
+--- !u!114 &-4055778466542224613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337169336087433
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-3307775346664773763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,15 +610,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -4954897104429021443}
-  - {fileID: -5882511262631096438}
+  - {fileID: -5674286590286660691}
   EditorEvents:
   - {fileID: 7633230870673606695}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5882511262631096438}
+  - {fileID: -5674286590286660691}
   StringsBanks:
   - {fileID: -4954897104429021443}
-  stringsBankWriteTime: 637337271570000000
+  stringsBankWriteTime: 637337976575165002
   cacheVersion: 3
 --- !u!114 &168948410988518545
 MonoBehaviour:
@@ -530,6 +635,23 @@ MonoBehaviour:
   Name: MonsterParam
   Min: 0
   Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &210381406229113077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &381721693738983185
@@ -655,6 +777,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3986211555232334824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4253829112663617098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +847,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &4479275089149074597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &4569464420803876241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -757,6 +913,23 @@ MonoBehaviour:
   Name: ExitParam
   Min: 0
   Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &5868431999213423843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/ExitParam
+  m_EditorClassIdentifier: 
+  Name: ExitParam
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &6158545315642243886
@@ -828,6 +1001,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &7581737080738952624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Music/ExtraCreditsAdaptive/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637337970150493996
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7633230870673606695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,16 +1034,16 @@ MonoBehaviour:
   Path: event:/VerticalOrchestration
   guid: be3ef731e43c1f4aa408c1931b831871
   Banks:
-  - {fileID: -5882511262631096438}
-  IsStream: 0
+  - {fileID: -5674286590286660691}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6487643620482836730}
-  - {fileID: -3307775346664773763}
+  - {fileID: -5995322416649282217}
+  - {fileID: 3986211555232334824}
   MinDistance: 0
   MaxDistance: 0
-  Length: 4363
+  Length: 30967
 --- !u!114 &7835267294223730641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,6 +1059,23 @@ MonoBehaviour:
   Name: ExitParam
   Min: 0
   Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &7872909801867800263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VerticalOrchestration/MonParam
+  m_EditorClassIdentifier: 
+  Name: MonParam
+  Min: 0
+  Max: 1
   Default: 0
   Exists: 0
 --- !u!114 &8242285550852296058

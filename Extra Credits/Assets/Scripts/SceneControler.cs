@@ -28,7 +28,7 @@ public class SceneControler: MonoBehaviour
 	[FMODUnity.EventRef]
 	public string fmodEvent;
 
-	public float distCoeff = 50.0f; // How close you need to be for music layers to play
+	public float distCoeff = 60.0f; // How close you need to be for music layers to play
 	[SerializeField][Range(0f, 1f)]
 	private float MonParam;
 	[SerializeField][Range(0f, 1f)]
