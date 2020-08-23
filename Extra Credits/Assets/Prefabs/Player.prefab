@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1185538097556135087}
   - component: {fileID: 1185538097556135080}
   - component: {fileID: 1185538097556135086}
-  - component: {fileID: 1185538097556135084}
+  - component: {fileID: 702487905}
   - component: {fileID: 1185538097556135085}
   - component: {fileID: 1185538097556135059}
   m_Layer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185538097556135081}
-  m_LocalRotation: {x: -0, y: -0, z: 0.19759807, w: 0.98028314}
+  m_LocalRotation: {x: 0, y: 0, z: 0.1975975, w: 0.9802833}
   m_LocalPosition: {x: -35.16, y: -9.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5697749b6209a4dd38677f0bec988cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exit: {fileID: 0}
   sceneControler: {fileID: 0}
   forwardV: 15
   backwardV: 12
@@ -106,32 +105,33 @@ MonoBehaviour:
   xDecceleration: 15
   rotV: 180
   rotA: 450
---- !u!61 &1185538097556135084
-BoxCollider2D:
+--- !u!114 &702487905
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185538097556135081}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5, y: 3}
-    newSize: {x: 0.01, y: 0.01}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5, y: 3}
-  m_EdgeRadius: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/VerticalOrchestration
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params:
+  - Name: MonParam
+    Value: 0
+  - Name: ExitParam
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!50 &1185538097556135085
 Rigidbody2D:
   serializedVersion: 4
