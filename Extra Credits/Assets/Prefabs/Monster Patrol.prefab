@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5872611015751324189}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Monster Patrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6832531797108685976}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Patrol Dest (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6832531797108685977}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.8, y: 72.8, z: 0}
+  m_LocalPosition: {x: -32.6, y: 57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5872611015751324189}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6832531797132808063}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Patrol Dest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,13 +86,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6832531797132808060}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.5, y: 56, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 54.3, y: 54.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5872611015751324189}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1983794517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7737330171157653796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a537d958aa5bb4f35b0d7b40d72278f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  penalty: 1000
+  randomStep: 1
 --- !u!114 &6832531797209738999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,12 +135,12 @@ PrefabInstance:
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.251892
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 73.32466
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
@@ -135,17 +150,17 @@ PrefabInstance:
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
         type: 3}
@@ -176,6 +191,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Monster AI
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869299837178226163, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280708202540472864, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1862258904791327188, guid: fa1e3dc8431f846c292dd13798f50700, type: 3}

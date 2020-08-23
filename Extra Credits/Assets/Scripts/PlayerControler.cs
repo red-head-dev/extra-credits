@@ -121,4 +121,14 @@ public class PlayerControler: MonoBehaviour
 			sceneControler.GetComponent < SceneControler > ().OnLose();
 		}
 	}
+	void OnTriggerEnter2D(Collider2D collider) {
+		if (collider.gameObject.tag == "Finish" ) {
+			Debug.Log("Entered Exit");
+			sceneControler.GetComponent < SceneControler > ().OnWin();
+		}
+		if (collider.gameObject.tag == "Monster" ) {
+			Debug.Log("Hit Monstert");
+			sceneControler.GetComponent < SceneControler > ().OnLose();
+		}
+	}
 }
