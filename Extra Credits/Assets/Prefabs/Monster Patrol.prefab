@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6716457288089826801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5872611015751324189}
+  m_Layer: 0
+  m_Name: Monster Patrol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5872611015751324189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6716457288089826801}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5028543484014401356}
+  - {fileID: 6832531797132808063}
+  - {fileID: 6832531797108685976}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6832531797108685977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6832531797108685976}
+  m_Layer: 0
+  m_Name: Patrol Dest (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6832531797108685976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6832531797108685977}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -21.8, y: 72.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5872611015751324189}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6832531797132808060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6832531797132808063}
+  m_Layer: 0
+  m_Name: Patrol Dest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6832531797132808063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6832531797132808060}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 56.5, y: 56, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5872611015751324189}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6832531797209738999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7737330171157653796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e6c29e32504465faa943c537d8029b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  targets:
+  - {fileID: 6832531797132808063}
+  - {fileID: 6832531797108685976}
+  delay: 0
+--- !u!1001 &6832531798761639127
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5872611015751324189}
+    m_Modifications:
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.251892
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 73.32466
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3869299837178226163, guid: fa1e3dc8431f846c292dd13798f50700,
+        type: 3}
+      propertyPath: m_Name
+      value: Monster AI
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1862258904791327188, guid: fa1e3dc8431f846c292dd13798f50700, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: fa1e3dc8431f846c292dd13798f50700, type: 3}
+--- !u!1 &7737330171157653796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3869299837178226163, guid: fa1e3dc8431f846c292dd13798f50700,
+    type: 3}
+  m_PrefabInstance: {fileID: 6832531798761639127}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5028543484014401356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1953153559804976027, guid: fa1e3dc8431f846c292dd13798f50700,
+    type: 3}
+  m_PrefabInstance: {fileID: 6832531798761639127}
+  m_PrefabAsset: {fileID: 0}
