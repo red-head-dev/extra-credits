@@ -288,14 +288,14 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
-    height: 1
+    width: 0.25
+    height: 0.25
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
   orthographic size: 49.603287
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -467,7 +467,12 @@ PrefabInstance:
     - target: {fileID: 3200530088951682510, guid: f7d0943320ab84844b3a53fa2b2bba95,
         type: 3}
       propertyPath: m_Name
-      value: Monster
+      value: Monster Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3200530088951682510, guid: f7d0943320ab84844b3a53fa2b2bba95,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -777,33 +782,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1185538098241044979}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &702487905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702487898}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VerticalOrchestration
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params:
-  - Name: MonParam
-    Value: 0
-  - Name: ExitParam
-    Value: 0
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &1132595318
 GameObject:
   m_ObjectHideFlags: 0
@@ -11383,31 +11361,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1185538097556135059, guid: ad3af9c8103e5496aa5ed88a541733d6,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1185538097556135081, guid: ad3af9c8103e5496aa5ed88a541733d6,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1185538097556135084, guid: ad3af9c8103e5496aa5ed88a541733d6,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1185538097556135084, guid: ad3af9c8103e5496aa5ed88a541733d6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1185538097556135086, guid: ad3af9c8103e5496aa5ed88a541733d6,
-        type: 3}
-      propertyPath: exit
-      value: 
-      objectReference: {fileID: 1464606006}
     - target: {fileID: 1185538097556135086, guid: ad3af9c8103e5496aa5ed88a541733d6,
         type: 3}
       propertyPath: sceneControler
