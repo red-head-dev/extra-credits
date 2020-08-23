@@ -28,11 +28,10 @@ public class SceneControler: MonoBehaviour
 	[FMODUnity.EventRef]
 	public string fmodEvent;
 
-	//[SerializeField] [Range(0f, 4f)]
-	//private float Intensity;
-	[SerializeField][Range(0f, 4f)]
+	public float distCoeff = 50.0f; // How close you need to be for music layers to play
+	[SerializeField][Range(0f, 1f)]
 	private float MonParam;
-	[SerializeField][Range(0f, 4f)]
+	[SerializeField][Range(0f, 1f)]
 	private float exitParam;
 	// End Peter FMOD code
 
@@ -73,8 +72,8 @@ public class SceneControler: MonoBehaviour
 		                             ToString("N2");
 
 		// Peter FMOD code
-		MonParam = ConvertDistToFMOD(ClosestObjDist(player, GameObject.FindGameObjectsWithTag("Monster")));
-		exitParam = ConvertDistToFMOD(ClosestObjDist(player, GameObject.FindGameObjectsWithTag("Finish")));
+		MonParam = ConvertDistToFMOD((double)ClosestObjDist(player, GameObject.FindGameObjectsWithTag("Monster")));
+		exitParam = ConvertDistToFMOD((double)ClosestObjDist(player, GameObject.FindGameObjectsWithTag("Finish")));
 		instance.setParameterByName("MonParam", MonParam);
 		instance.setParameterByName("ExitParam", exitParam);
 		// End Peter FMOD code
@@ -82,9 +81,12 @@ public class SceneControler: MonoBehaviour
 	}
 
 	// Peter FMOD code
-	static float ConvertDistToFMOD(float dist) {
+	float ConvertDistToFMOD(double dist) {
 		// Return converion from spatial distance to FMOD parameter
-		float FMODparam = (100 - dist) / 25;
+		float FMODparam = 0;
+		if (dist < distCoeff) {
+			FMODparam = (float)Math.Sqrt((1-Math.Pow(dist/distCoeff,2)));
+		}
 		return FMODparam;
 	}
 	// End Peter FMOD code

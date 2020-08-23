@@ -914,6 +914,7 @@ MonoBehaviour:
   endGameBackground: {fileID: 1559887082}
   endGameDelay: 5
   fmodEvent: event:/VerticalOrchestration
+  distCoeff: 50
   MonParam: 0
   exitParam: 0
 --- !u!4 &1231904784
