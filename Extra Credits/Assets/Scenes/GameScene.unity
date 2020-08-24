@@ -21906,6 +21906,11 @@ PrefabInstance:
       propertyPath: sceneControler
       value: 
       objectReference: {fileID: 566769761803148366}
+    - target: {fileID: 1185538097556135086, guid: ad3af9c8103e5496aa5ed88a541733d6,
+        type: 3}
+      propertyPath: decceleration
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1185538097556135087, guid: ad3af9c8103e5496aa5ed88a541733d6,
         type: 3}
       propertyPath: m_LocalPosition.x
