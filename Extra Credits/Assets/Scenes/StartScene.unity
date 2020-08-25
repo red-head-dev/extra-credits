@@ -221,8 +221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 270.6, y: -175.4}
-  m_SizeDelta: {x: 245.48346, y: 107.2441}
+  m_AnchoredPosition: {x: 271, y: -165.35}
+  m_SizeDelta: {x: 246.28635, y: 117.146}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186844610
 MonoBehaviour:
@@ -259,13 +259,15 @@ MonoBehaviour:
   m_Text: 'CREDITS:
 
 
-    Programing - Harry Bullen
+    Programing/Sprites - Harry Bullen
 
     Music - Peter Bullen
 
 
-    Running
-    Minotaurs - WFMU Radio'
+    Tiles
+    - Szadi Art.
+
+    Running Minotaurs - WFMU Radio'
 --- !u!222 &186844611
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -327,7 +329,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 18.32666
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -619,10 +621,10 @@ RectTransform:
   m_Father: {fileID: 1983476325}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.059999943, y: -167.68999}
-  m_SizeDelta: {x: 799.87555, y: 799.87555}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -399.94}
+  m_SizeDelta: {x: 799.87555, y: 799.8755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893834818
 MonoBehaviour:
@@ -984,7 +986,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Large Scene
+          m_StringArgument: Instruction Scene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1497906103864533157

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using static UnityEngine.Mathf;
 using System;
 
-public class SceneControler: MonoBehaviour
+public class SceneControlerReal: MonoBehaviour
 {
 
 	public GameObject exitDistanceText;
@@ -118,7 +118,7 @@ public class SceneControler: MonoBehaviour
 
 	private IEnumerator ReloadAfterDelay() {
 		yield return new WaitForSeconds(endGameDelay);
-		SceneManager.LoadScene("Large Scene Real");
+		SceneManager.LoadScene("StartScene");
 	}
 
 	public void OnWin() {
@@ -130,8 +130,8 @@ public class SceneControler: MonoBehaviour
 
 
 	public void OnLose() {
-		//endGameBackground.SetActive(true);
-		//m_loseText.text = "You Lost!";
+		endGameBackground.SetActive(true);
+		m_loseText.text = "You Lost!";
 		StartCoroutine(ReloadAfterDelay());
 		instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 		// instance.relase?
