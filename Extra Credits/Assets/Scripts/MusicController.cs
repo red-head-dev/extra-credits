@@ -6,22 +6,17 @@ using UnityEngine.SceneManagement;
 using static UnityEngine.Mathf;
 using System;
 
-public class SceneControler: MonoBehaviour
+public class MusicController: MonoBehaviour
 {
 
 	public GameObject exitDistanceText;
 	public GameObject monsterDistanceText;
-	public GameObject winText;
-	public GameObject loseText;
 	public GameObject endGameBackground;
 
-	public float endGameDelay = 5.0f; // Seconds to wait after game end before returing to start
 
 	private GameObject player;
 	private Text m_exitDistanceText;
 	private Text m_monsterDistanceText;
-	private Text m_winText;
-	private Text m_loseText;
 
 	// Peter FMOD code
 	private FMOD.Studio.EventInstance instance;
@@ -42,13 +37,6 @@ public class SceneControler: MonoBehaviour
 
 		m_exitDistanceText = exitDistanceText.GetComponent < Text > ();
 		m_monsterDistanceText = monsterDistanceText.GetComponent < Text > ();
-		m_winText = winText.GetComponent < Text > ();
-		m_loseText = loseText.GetComponent < Text > ();
-
-		m_winText.text = "";
-		m_loseText.text = "";
-		endGameBackground.SetActive(false);
-
 
 		// Peter FMOD code
 		instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
@@ -58,26 +46,19 @@ public class SceneControler: MonoBehaviour
 
 		instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
-		instance.start(); // DOES NOT RETURN!!!!
-		/*
-		            var result = FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
-		            Debug.Log(result);
-		            result = FMODUnity.RuntimeManager.CoreSystem.mixerResume();
-		            Debug.Log(result);
-		 */
-		//audioResumed = true;
+		instance.start();
 	}
 
 	void OnDestory() {
+		StopMusic();
+	}
+
+	public void StopMusic() {
 		instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 	}
 
-
 	// Update is called once per frame
 	void Update() {
-		if (Input.GetKey("escape"))
-			Application.Quit();
-
 		// Set distance
 		m_exitDistanceText.text = "D = " +
 		                          ClosestObjDist(player, GameObject.FindGameObjectsWithTag("Finish")).
@@ -116,24 +97,5 @@ public class SceneControler: MonoBehaviour
 		return dist;
 	}
 
-	private IEnumerator ReloadAfterDelay() {
-		yield return new WaitForSeconds(endGameDelay);
-		SceneManager.LoadScene("Large Scene Real");
-	}
 
-	public void OnWin() {
-		endGameBackground.SetActive(true);
-		m_winText.text = "You Won!";
-		StartCoroutine(ReloadAfterDelay());
-		instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-	}
-
-
-	public void OnLose() {
-		//endGameBackground.SetActive(true);
-		//m_loseText.text = "You Lost!";
-		StartCoroutine(ReloadAfterDelay());
-		instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-		// instance.relase?
-	}
 }

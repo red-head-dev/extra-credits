@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.Mathf;
 
-public class PlayerControler: MonoBehaviour
+public class PlayerController: MonoBehaviour
 {
 
-	public GameObject sceneControler;
+	public GameObject mazeController;
 	public float forwardV = 1.0f;
 	public float backwardV = 0.5f;
 	public float acceleration = 1.0f;
@@ -112,23 +112,23 @@ public class PlayerControler: MonoBehaviour
 	// On collision only works with a non trigger collider
 	// trigger must be done in trigger.
 	void OnCollisionEnter2D(Collision2D collision) {
-		if (collision.collider.gameObject.tag == "Finish" ) {
-			Debug.Log("Entered Exit");
-			sceneControler.GetComponent < SceneControler > ().OnWin();
-		}
-		if (collision.collider.gameObject.tag == "Monster" ) {
-			Debug.Log("Hit Monstert");
-			sceneControler.GetComponent < SceneControler > ().OnLose();
-		}
+		OnTriggerEnter2D(collision.collider);
 	}
+
+	// TODO try defining the type as MazeController does that work?
 	void OnTriggerEnter2D(Collider2D collider) {
-		if (collider.gameObject.tag == "Finish" ) {
-			Debug.Log("Entered Exit");
-			sceneControler.GetComponent < SceneControler > ().OnWin();
-		}
-		if (collider.gameObject.tag == "Monster" ) {
-			Debug.Log("Hit Monstert");
-			sceneControler.GetComponent < SceneControler > ().OnLose();
+		// if mazeController defined.
+		if (!(mazeController is null)) {
+			if (collider.gameObject.tag == "Finish" ) {
+				Debug.Log("Entered Exit");
+				mazeController.GetComponent < MazeController > ().OnWin();
+			}
+			if (collider.gameObject.tag == "Monster" ) {
+				Debug.Log("Hit Monstert");
+				mazeController.GetComponent < MazeController > ().OnLose();
+			}
 		}
 	}
+
+
 }
