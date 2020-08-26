@@ -28,8 +28,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185538097556135081}
-  m_LocalRotation: {x: 0, y: 0, z: 0.1975975, w: 0.9802833}
-  m_LocalPosition: {x: -35.16, y: -9.88, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.19759807, w: 0.98028314}
+  m_LocalPosition: {x: -10.7, y: -118.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,11 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5697749b6209a4dd38677f0bec988cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneControler: {fileID: 0}
+  mazeController: {fileID: 0}
   forwardV: 15
   backwardV: 12
   acceleration: 15
-  decceleration: 30
+  decceleration: 50
   xDecceleration: 15
   rotV: 180
   rotA: 450
@@ -171,7 +171,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.11, y: 0.11}
+    oldSize: {x: 7.3333335, y: 7.3333335}
     newSize: {x: 0.01, y: 0.01}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -179,10 +179,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.5318146, y: -0.4669466}
-      - {x: -1.9625854, y: 1.5227118}
-      - {x: -0.045799255, y: 0.34593582}
-      - {x: 1.9804039, y: 1.5111704}
-      - {x: 2.5226784, y: -0.5436964}
-      - {x: 2.5211105, y: -1.4928904}
-      - {x: -2.5192337, y: -1.463151}
+    - - {x: -2.8542647, y: 0.22236705}
+      - {x: -2.1066127, y: 2.4285247}
+      - {x: -0.14027615, y: 1.2309355}
+      - {x: 2.3670342, y: 2.2231462}
+      - {x: 2.9186618, y: -0.15628216}
+      - {x: 2.2640193, y: -1.0642244}
+      - {x: -2.2223403, y: -1.034089}

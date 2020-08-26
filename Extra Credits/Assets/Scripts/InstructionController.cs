@@ -18,7 +18,6 @@ public class InstructionController: MonoBehaviour
 
 	private IEnumerator ReloadAfterDelay() {
 		yield return new WaitForSeconds(endGameDelay);
-		GetComponent < MusicController > ().StopMusic();
 		SceneManager.LoadScene(nextScene);
 	}
 }

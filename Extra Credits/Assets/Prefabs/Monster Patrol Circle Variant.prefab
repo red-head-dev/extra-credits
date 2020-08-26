@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 1404673775804549800, guid: 70fce70595d5b4c0fa01dab8be6a09ac,
         type: 3}
       propertyPath: m_Name
-      value: Monster Patroll
+      value: Monster Patrol Circle Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2248551377790381380, guid: 70fce70595d5b4c0fa01dab8be6a09ac,
         type: 3}
@@ -112,6 +112,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5334695217161358218, guid: 70fce70595d5b4c0fa01dab8be6a09ac,
+        type: 3}
+      propertyPath: targets.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5334695217161358218, guid: 70fce70595d5b4c0fa01dab8be6a09ac,
+        type: 3}
+      propertyPath: targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 2902454520336284462}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70fce70595d5b4c0fa01dab8be6a09ac, type: 3}
 --- !u!4 &7415515218829613085 stripped

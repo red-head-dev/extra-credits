@@ -39,7 +39,6 @@ public class MazeController: MonoBehaviour
 	}
 
 	private IEnumerator ReloadAfterDelay() {
-		musicController.StopMusic();
 		yield return new WaitForSeconds(endGameDelay);
 		SceneManager.LoadScene("StartScene");
 	}
